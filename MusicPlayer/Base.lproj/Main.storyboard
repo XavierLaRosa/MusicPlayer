@@ -32,6 +32,7 @@
                                         </state>
                                         <connections>
                                             <action selector="genreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ehk-Xk-wM1"/>
+                                            <segue destination="3An-5P-hxN" kind="presentation" modalTransitionStyle="crossDissolve" id="AFd-ND-j23"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qye-yA-UAr">
@@ -46,6 +47,7 @@
                                         </state>
                                         <connections>
                                             <action selector="genreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zc1-aI-qRY"/>
+                                            <segue destination="3An-5P-hxN" kind="presentation" modalTransitionStyle="crossDissolve" id="2hX-1e-C6a"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTA-VL-3Ub">
@@ -60,6 +62,7 @@
                                         </state>
                                         <connections>
                                             <action selector="genreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d6c-zl-WMN"/>
+                                            <segue destination="3An-5P-hxN" kind="presentation" modalTransitionStyle="crossDissolve" id="ybM-Xd-ZGO"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -98,12 +101,24 @@
                                     <action selector="nextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YCN-qB-efw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlr-j1-uNX">
+                                <rect key="frame" x="137.5" y="63.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0jb-1F-EIT"/>
+                                    <constraint firstAttribute="height" constant="30" id="Dld-8u-Ejq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.11257192665801523" green="0.051296259806366457" blue="0.14700048575129532" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="uZ4-t1-S9Q" firstAttribute="top" secondItem="tlr-j1-uNX" secondAttribute="bottom" constant="40" id="0qw-sj-wpe"/>
                             <constraint firstItem="uZ4-t1-S9Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="ElR-Nv-8C3"/>
                             <constraint firstItem="q8U-xo-rg4" firstAttribute="trailing" secondItem="uZ4-t1-S9Q" secondAttribute="trailing" id="Tnf-MZ-Ipj"/>
                             <constraint firstItem="hgr-4a-6Dd" firstAttribute="top" secondItem="uZ4-t1-S9Q" secondAttribute="bottom" constant="70" id="WIb-Gt-WQo"/>
+                            <constraint firstItem="tlr-j1-uNX" firstAttribute="centerX" secondItem="uZ4-t1-S9Q" secondAttribute="centerX" id="aIP-Eg-zeE"/>
                             <constraint firstItem="uZ4-t1-S9Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dv5-2f-CwP"/>
                             <constraint firstItem="q8U-xo-rg4" firstAttribute="centerY" secondItem="hgr-4a-6Dd" secondAttribute="centerY" id="mnt-Oh-O8S"/>
                             <constraint firstItem="hgr-4a-6Dd" firstAttribute="leading" secondItem="uZ4-t1-S9Q" secondAttribute="leading" id="yqU-Ce-2zb"/>
@@ -113,6 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="49" y="27"/>
         </scene>
         <!--Sound Wave View Controller-->
         <scene sceneID="4OY-zo-HSq">
@@ -122,21 +138,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="asianNeon1" translatesAutoresizingMaskIntoConstraints="NO" id="YSd-R4-fuG">
-                                <rect key="frame" x="-2" y="0.0" width="378" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="260" verticalHuggingPriority="260" image="asianNeon1" translatesAutoresizingMaskIntoConstraints="NO" id="YSd-R4-fuG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWq-F0-CGJ">
-                                <rect key="frame" x="16" y="15" width="74" height="40"/>
+                                <rect key="frame" x="16" y="35" width="74" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <size key="titleShadowOffset" width="1.75" height="1"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="5WA-5d-vNE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgV-JD-RUv">
+                                <rect key="frame" x="127.5" y="444" width="120" height="60"/>
+                                <color key="backgroundColor" red="0.1818780921" green="0.75609213080000004" blue="0.18980346419999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Izi-B2-Tqz"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="WXp-9q-Ydg"/>
+                                    <constraint firstAttribute="width" constant="120" id="ZKS-k7-dyb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="lIg-Qy-A4W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dbz-WJ-hLm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YSd-R4-fuG" firstAttribute="top" secondItem="5ni-2F-dgR" secondAttribute="topMargin" id="8aR-WK-jW5"/>
+                            <constraint firstItem="YSd-R4-fuG" firstAttribute="leading" secondItem="5ni-2F-dgR" secondAttribute="leadingMargin" id="Nh2-eR-xbL"/>
+                            <constraint firstItem="YSd-R4-fuG" firstAttribute="leading" secondItem="5ni-2F-dgR" secondAttribute="leading" id="UTN-Jf-qlK"/>
+                            <constraint firstItem="YSd-R4-fuG" firstAttribute="top" secondItem="5ni-2F-dgR" secondAttribute="top" id="UiC-RV-Q3b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YSd-R4-fuG" secondAttribute="trailing" id="oxv-KR-558"/>
+                            <constraint firstItem="YSd-R4-fuG" firstAttribute="bottom" secondItem="NU2-D7-Grl" secondAttribute="bottom" id="pOe-U9-Q2f"/>
+                            <constraint firstAttribute="trailing" secondItem="YSd-R4-fuG" secondAttribute="trailing" id="tK2-oT-rSX"/>
+                            <constraint firstItem="VgV-JD-RUv" firstAttribute="centerX" secondItem="NU2-D7-Grl" secondAttribute="centerX" id="xlu-2u-dPO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="NU2-D7-Grl"/>
                     </view>
                 </viewController>
@@ -148,4 +193,7 @@
     <resources>
         <image name="asianNeon1" width="2000" height="3000"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ybM-Xd-ZGO"/>
+    </inferredMetricsTieBreakers>
 </document>
