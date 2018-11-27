@@ -38,6 +38,9 @@ class SignInViewController: UIViewController {
         }
     }
     
+    @IBAction func createAccountTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "toCreateAccountSegue", sender: self)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         /*if segue.identifier == "toGenreSegue"
         {
