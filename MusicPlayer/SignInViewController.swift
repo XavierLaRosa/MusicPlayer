@@ -29,12 +29,23 @@ class SignInViewController: UIViewController {
            
             if (key == userText.text && value == passText.text){
                 print("Welcome " + userText.text! + " " + passText.text!)
-        }
+                self.performSegue(withIdentifier: "toGenreSegue", sender: self)
+            }
             else{
                 //print("Sorry")
+                //signInTapped.setTitle("ERROR", forState: .Normal)
             }
+        }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        /*if segue.identifier == "toGenreSegue"
+        {
+            guard let destination = segue.destination as? GenreButtonScreen else { return }
+            
+        }*/
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

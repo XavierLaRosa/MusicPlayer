@@ -17,9 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="wave2" translatesAutoresizingMaskIntoConstraints="NO" id="xxa-9c-mXF">
-                                <rect key="frame" x="67.381952914562817" y="-278.5" width="240.00000000000006" height="512"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Music Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaQ-zi-gAB">
                                 <rect key="frame" x="122" y="74" width="137" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -60,13 +57,18 @@
                                     <action selector="signInTapped:" destination="6ly-rR-naJ" eventType="touchUpInside" id="vf3-gT-S7Y"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wave2" translatesAutoresizingMaskIntoConstraints="NO" id="D5u-c3-Mn0">
+                                <rect key="frame" x="0.0" y="-62.5" width="375" height="512"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1101953312754631" green="0.051165379583835602" blue="0.14902836084365845" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="D5u-c3-Mn0" firstAttribute="leading" secondItem="dou-4l-13n" secondAttribute="leading" id="299-XM-iqC"/>
+                            <constraint firstItem="D5u-c3-Mn0" firstAttribute="centerY" secondItem="KFL-4h-un7" secondAttribute="centerY" constant="-140" id="BXt-Fu-x3w"/>
                             <constraint firstItem="190-wP-P6j" firstAttribute="top" secondItem="4yB-x2-bfQ" secondAttribute="bottom" constant="20" id="FHd-cm-xE8"/>
                             <constraint firstItem="mjy-G1-pTW" firstAttribute="centerX" secondItem="KFL-4h-un7" secondAttribute="centerX" id="HIF-0l-LB4"/>
+                            <constraint firstItem="D5u-c3-Mn0" firstAttribute="trailing" secondItem="dou-4l-13n" secondAttribute="trailing" id="LrF-un-jrh"/>
                             <constraint firstItem="4yB-x2-bfQ" firstAttribute="centerX" secondItem="KFL-4h-un7" secondAttribute="centerX" id="OMl-lM-arP"/>
-                            <constraint firstItem="4yB-x2-bfQ" firstAttribute="top" secondItem="xxa-9c-mXF" secondAttribute="bottom" constant="55" id="Py6-uI-aNR"/>
                             <constraint firstItem="KwE-Tj-DCG" firstAttribute="top" secondItem="190-wP-P6j" secondAttribute="bottom" constant="8" id="UXt-D8-VpX"/>
                             <constraint firstItem="mjy-G1-pTW" firstAttribute="top" secondItem="lE2-pC-1Pf" secondAttribute="bottom" constant="8" id="UzA-Lh-37k"/>
                             <constraint firstItem="190-wP-P6j" firstAttribute="centerY" secondItem="KFL-4h-un7" secondAttribute="centerY" constant="20" id="lXY-kL-45t"/>
@@ -81,6 +83,7 @@
                     <connections>
                         <outlet property="passText" destination="KwE-Tj-DCG" id="bkm-AI-5hS"/>
                         <outlet property="userText" destination="190-wP-P6j" id="7hb-Mo-0a2"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toGenreSegue" id="sT8-yg-8Pn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xaC-iP-xUG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -273,5 +276,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2hX-1e-C6a"/>
+        <segue reference="sT8-yg-8Pn"/>
     </inferredMetricsTieBreakers>
 </document>
