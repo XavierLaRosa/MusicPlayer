@@ -37,6 +37,7 @@ class createAnAccountViewController: UIViewController {
             if (key == userText.text){
                 print("Invalid " + userText.text! + " is already taken")
                 checkerLabel.isHidden = false
+                //checkerLabel.textColor = .Blue
             }
             else if(userText.text == nil){
                 print("null user")
@@ -45,6 +46,10 @@ class createAnAccountViewController: UIViewController {
                 self.performSegue(withIdentifier: "fromCreateToGenreSegue", sender: self)
             }
         }
+        //11.27.18
+        //try to find a way to make check text hidden but when
+        //pressed to check it shows up with a couple possible
+        //error outputs to tell the user
     }
     
     override func viewDidLoad() {
